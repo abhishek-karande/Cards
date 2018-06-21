@@ -6,8 +6,8 @@ func main() {
 	//card = "King of Hearts"
 	//fmt.Println(card)
 	cards := newDeck()
-	cards.print()
-}
-func newCard() string {
-	return "Five of Clubs"
+
+	hand, remainingCards := deal(cards, 5)
+	hand.print()
+	remainingCards.print()
 }
