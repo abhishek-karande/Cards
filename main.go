@@ -5,8 +5,7 @@ func main() {
 	//card := newCard()
 	//card = "King of Hearts"
 	//fmt.Println(card)
-	cards := deck{newCard(), newCard()}
-	cards = append(cards, "Giraffe of Africa")
+	cards := newDeck()
 	cards.print()
 }
 func newCard() string {
